@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/predict.css">
+    <title>Car Resale Predicted Value</title>
+</head>
+
+<body>
+	<section class="header">
+      <nav>
+      </nav>
+        <div class="text-box">
+<center>
+      <table id="value_table">
+        <tr>
+          <th>Registration</th>
+          <td>{{reg_month}} {{reg_year}}</td>
+        </tr>
+        <tr>
+          <th>Power</th>
+          <td>{{powerps}}</td>
+        </tr>
+        <tr>
+          <th>Kilometers driven</th>
+          <td>{{kms}}</td>
+        </tr>
+        <tr>
+          <th>Gear Type</th>
+          <td>{{gearbox}}</td>
+        </tr>
+        <tr>
+          <th>Repaired/Damaged</th>
+          <td>{{damage}}</td>
+        </tr>
+        <tr>
+          <th>Model</th>
+          <td>{{brand}} {{model}}</td>
+        </tr>
+        <tr>
+          <th>Fuel Type</th>
+          <td>{{fuel_type}}</td>
+        </tr>
+        <tr>
+          <th>Car Type</th>
+          <td>{{veh_type}}</td>
+        </tr>
+      </table>
+</center>
+      <h1>The Predicted Car Resale Value is Rs. {{predict}}</h1>
+
+        </div>
+    </section>
+	
+	
+</body>
+</html>
