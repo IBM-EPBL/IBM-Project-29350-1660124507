@@ -6,7 +6,7 @@
    <h1>Car Resale Value Prediction Predictor</h1>
    <h3>Team Members: Sudharsan B, Viswanath Pathnaban, Shenbaga Shudhan VRR, Rukesh A </h3>
    
-   <a href="https://youtu.be/dvK8eHZeajk">Demo Link</a>
+   <a href="https://youtu.be/dvK8eHZeajk">Demo Link</a> <br>
    <a href="viswanath24.pythonanywhere.com">Hosted Application</a>
 </div>
 
