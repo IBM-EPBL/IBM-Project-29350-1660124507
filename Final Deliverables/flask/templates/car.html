@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Car resale value </title>
+  <link rel="stylesheet" href="../static/css/value.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    var attempt = 5; // Variable to count number of attempts.
+    // Below function Executes on click of login button.
+    function validate() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("pwd").value;
+      if (username == "admin" && password == "admin@123") {
+        alert("Login successfully");
+        window.location = "/predict_page"; // Redirecting to other page.
+        return false;
+      }
+      else {
+        attempt--;// Decrementing by one.
+        alert("Invalid Credentials!\n" + attempt + " attempts left");
+        // Disabling fields after 5 attempts.
+        if (attempt == 0) {
+          document.getElementById("username").disabled = true;
+          document.getElementById("pwd").disabled = true;
+          document.getElementById("submit").disabled = true;
+          return false;
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <section class="header">
+    <div class="form">
+      <div class="title">Car resale value Predictor</div>
+      <div class="subtitle">Best system to predict the amount of resale value based on the parameters provided by the
+        user.</div>
+      <form name="myForm" action="/predict_page" method="POST">
+        <div class="input-container ic1">
+          <input id="username" class="input" type="text" placeholder=" "/>
+          <div class="cut"></div>
+          <label for="firstname" class="placeholder">Username</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="pwd" class="input" type="password" placeholder=" "/>
+          <div class="cut"></div>
+          <label for="firstname" class="placeholder">Password</label>
+        </div>
+        <center>
+          <input id="submit" class="submit" type="button" value="Login & Check Price" onclick="validate()"/>
+        </center>
+    </div>
+
+    </form>
+    </div>
+
+  </section>
+
+</body>
+
+</html>
