@@ -8,6 +8,10 @@
    
    <a href="https://youtu.be/dvK8eHZeajk">Demo Link</a> <br>
    <a href="viswanath24.pythonanywhere.com">Hosted Application</a>
+   <h3>Demo Login <br>
+   Username = admin<br>
+   Password = admin@123
+   </h3>
 </div>
 
 ### Abstract
